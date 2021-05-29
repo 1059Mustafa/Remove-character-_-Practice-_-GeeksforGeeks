@@ -1,0 +1,24 @@
+string removeChars(string st1, string st2) 
+    {
+        map<char,int>mp;
+        for(int i=0;i<st2.size();i++)
+        {
+            mp[st2[i]]++;
+        }
+        int j=0;
+        string str3="";
+        for(int i=0;i<st1.size();i++)
+        {
+            if(mp.find(st1[i])!=mp.end())
+            {
+                
+            }
+            else
+            {
+                str3+=st1[i];
+            }
+            
+        }
+        // str3[j]='\0';
+        return str3;
+    }
